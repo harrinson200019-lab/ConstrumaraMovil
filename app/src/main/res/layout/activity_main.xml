@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ENCABEZADO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_header"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONSTRUMARA"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GESTIÓN DE CONSTRUCCIÓN"
+                android:textColor="#DCE9F7"
+                android:textSize="12sp"
+                android:letterSpacing="0.12"
+                android:layout_marginTop="8dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido"
+                android:textColor="#142D4E"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Administra la información de tu empresa desde un solo lugar."
+                android:textColor="#687789"
+                android:textSize="14sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MÓDULOS PRINCIPALES"
+                android:textColor="#526477"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="14dp"/>
+
+            <!-- CLIENTES -->
+            <TextView
+                android:id="@+id/btnClientes"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/bg_card"
+                android:elevation="3dp"
+                android:gravity="center_vertical"
+                android:paddingStart="22dp"
+                android:text="♙     Gestión de clientes"
+                android:textColor="#17365D"
+                android:theme="@null"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- PROYECTOS -->
+            <TextView
+                android:id="@+id/btnProyectos"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/bg_card"
+                android:elevation="3dp"
+                android:gravity="center_vertical"
+                android:paddingStart="22dp"
+                android:text="▦     Gestión de proyectos"
+                android:textColor="#17365D"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@null"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <!-- COTIZACIONES -->
+            <TextView
+                android:id="@+id/btnCotizaciones"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/bg_card"
+                android:elevation="3dp"
+                android:gravity="center_vertical"
+                android:paddingStart="22dp"
+                android:text="▤     Cotizaciones"
+                android:textColor="#17365D"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@null"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <!-- MATERIALES -->
+            <TextView
+                android:id="@+id/btnMateriales"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/bg_card"
+                android:elevation="3dp"
+                android:gravity="center_vertical"
+                android:paddingStart="22dp"
+                android:text="▧     Materiales e inventario"
+                android:textColor="#17365D"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@null"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONSTRUMARA  |  Sistema móvil"
+                android:textColor="#8795A5"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

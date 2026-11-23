@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GESTIÓN DE COTIZACIONES"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Registra y consulta las cotizaciones de tus proyectos"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Proyecto"
+            android:textColor="#263238"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <Spinner
+            android:id="@+id/spProyectos"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#2874A6"
+            android:spinnerMode="dropdown"/>
+
+        <EditText
+            android:id="@+id/etFechaCotizacion"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Fecha (AAAA-MM-DD)"
+            android:inputType="date"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"/>
+
+        <EditText
+            android:id="@+id/etDescripcionCotizacion"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Descripción de la cotización"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"/>
+
+        <EditText
+            android:id="@+id/etTotalCotizacion"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Total de la cotización"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"/>
+
+        <EditText
+            android:id="@+id/etEstadoCotizacion"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
+            android:hint="Estado (Ej. Borrador, Enviada, Aprobada)"
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"/>
+
+        <TextView
+            android:id="@+id/btnRegistrarCotizacion"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#2874A6"
+            android:gravity="center"
+            android:text="REGISTRAR COTIZACIÓN"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/btnConsultarCotizaciones"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="#1E8449"
+            android:gravity="center"
+            android:text="CONSULTAR COTIZACIONES"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/tvResultadoCotizaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_card"
+            android:padding="15dp"
+            android:text="Aquí aparecerán las cotizaciones registradas."
+            android:textColor="#263238"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
